@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>myweb</title>
+  <link rel="preload" href="fonts/Ubuntu-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body" data-theme="blue">
+  <div class="site-container">
+    <div class="loader">
+  <div class="loader__balls">
+    <div class="loader__ball loader__ball--red"></div>
+    <div class="loader__ball loader__ball--blue"></div>
+    <div class="loader__ball loader__ball--green"></div>
+    <div class="loader__ball loader__ball--yellow"></div>
+  </div>
+  <p class="loader__text">Loading</p>
+</div>
+
+<header class="header container-fluid">
+    <a href="index.html"><img src="img/logotype.png" alt="Логотип"></a>
+    <div class="burger">
+      <div class="burger__line"></div>
+    </div>
+</header>
+<div class="burger-menu">
+  <ul class="navigation">
+    <div class="navigation__round"></div>
+    <li class="navigation__item">
+       <a href="#" class="navigation__link">Portfolio</a>
+    </li>
+    <li class="navigation__item">
+      <a class="navigation__link" href="#">About me</a>
+    </li>
+  </ul>
+  <div class="choice-theme choice-theme-menu">
+    <p class="choice-theme__title">
+        Выберите тему
+    </p>
+    <div class="choice-theme__container">
+        <div class="choice-theme__item">
+            <input type="radio" id="blue" name="choice-theme" class="choice-theme__radio visually-hidden" checked>
+            <label for="blue" class="choice-theme__label choice-theme__label--blue"></label>
+        </div>
+        <div class="choice-theme__item">
+            <input type="radio" id="red" name="choice-theme" class="choice-theme__radio visually-hidden">
+            <label for="red" class="choice-theme__label choice-theme__label--red"></label>
+        </div>
+        <div class="choice-theme__item">
+            <input type="radio" id="green" name="choice-theme" class="choice-theme__radio visually-hidden">
+            <label for="green" class="choice-theme__label choice-theme__label--green"></label>
+        </div>
+        <div class="choice-theme__item">
+            <input type="radio" id="yellow" name="choice-theme" class="choice-theme__radio visually-hidden">
+            <label for="yellow" class="choice-theme__label choice-theme__label--yellow"></label>
+        </div>
+    </div>
+</div>
+</div>
+
+    <!-- <div class="page-blackout"></div> -->
+    <div class="container-fluid">
+      <section class="front-screen">
+    <div class="front-screen__landing">
+        <h1 class="front-screen__title">the best<span class="front-screen__word"> design</span></h1>
+        <h3 class="front-screen__subtitle">just try</h3>
+        <p class="front-screen__text">Lorem ipsum dolor sit <a href="#" class="link">amet</a>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla <a href="#" class="link">pariatur</a>. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="#" class="front-screen__button">Связаться</a>
+      <div class="front-screen__abstract">
+        <svg width="740" height="820" viewbox="0 0 740 820" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M638.425 161.591C641.241 98.1591 598.029 27.4337 576.072 0H740V820H23.5857C58.9642 734.5 171.979 685.763 261.408 660.5C434.861 611.5 410.225 488.322 421.593 404C440.199 265.995 634.905 240.881 638.425 161.591Z" fill="#FF5099"/>
+          <path d="M614.839 161.591C617.655 98.1591 574.444 27.4337 552.486 0H716.414V820H0C35.3785 734.5 148.393 685.763 237.822 660.5C411.275 611.5 386.64 488.322 398.008 404C416.613 265.995 611.319 240.881 614.839 161.591Z" fill="#FF5099" fill-opacity="0.6"/>
+          <ellipse cx="520.85" cy="41.5" rx="17.6892" ry="17.5"  fill-opacity="0.25"/>
+          <ellipse cx="194.09" cy="615.5" rx="36.8526" ry="37.5" fill-opacity="0.25"/>
+          <ellipse cx="544.435" cy="67.5" rx="8.84462" ry="8.5" fill-opacity="0.25"/>
+          <ellipse cx="255.02" cy="577.5" rx="18.1806" ry="18.5"fill-opacity="0.25"/>
+        </svg>
+      </div>
+    </div>
+    <div class="front-screen__navigation">
+        <div class="navigation navigation--darken">
+            <div class="navigation__round"></div>
+            <div class="navigation__item">
+                <a href="#" class="navigation__link">Portfolio</a>
+            </div>
+            <div class="navigation__item">
+                <a class="navigation__link" href="#">About me</a>
+            </div>
+        </div>
+    </div>
+    <div class="social social--front-screen">
+        <a class="social__item" href="#">
+            <svg width="26" height="17" viewbox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0V16.0424H7.75019C8.4683 16.0424 13.4138 15.8967 13.4138 11.3814C13.4138 8.55976 11.4729 7.60115 10.4871 7.31661C11.212 6.97449 12.655 6.16154 12.655 3.98349C12.655 2.77083 12.4823 0 7.5334 0H0ZM17.6683 1.49042V2.95374H23.657V1.49042H17.6683ZM3.52281 2.73696H6.82884C7.14047 2.73696 9.24061 2.57098 9.24061 4.57966C9.24061 6.29703 7.72309 6.47656 7.09982 6.47656H3.52281V2.73696ZM20.8117 4.28157C16.2829 4.28157 15.3378 8.21425 15.3378 9.91808C15.3378 14.9753 19.4839 15.5546 20.8117 15.5546C24.3921 15.5546 25.4083 13.2377 25.8249 11.9505H23.2235C23.1219 12.2824 22.3631 13.3596 20.9201 13.3596C18.5015 13.3596 18.2915 11.4695 18.2915 10.6226H25.9875C26.1433 7.69599 24.8629 4.28157 20.8117 4.28157ZM20.7304 6.47656C21.4519 6.47656 22.0345 6.68657 22.3834 7.07273C22.7323 7.46227 22.9897 8.03134 23.0609 8.77994H18.2915C18.3051 8.57331 18.3525 8.3362 18.427 8.07537C18.5015 7.80777 18.6167 7.55373 18.8064 7.31661C18.9961 7.08289 19.2603 6.87965 19.5652 6.72044C19.8768 6.55785 20.263 6.47656 20.7304 6.47656ZM3.52281 8.88833H7.34371C8.10247 8.88833 9.89098 9.00689 9.89098 11.1917C9.89098 13.3088 7.63841 13.3054 7.28952 13.3054H3.52281V8.88833Z" fill="#010101"/>
+            </svg>
+        </a>
+        <a class="social__item" href="#">
+            <svg width="26" height="27" viewbox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.22222 0C3.23989 0 0 3.3645 0 7.5V19.5C0 23.6355 3.23989 27 7.22222 27H18.7778C22.7601 27 26 23.6355 26 19.5V7.5C26 3.3645 22.7601 0 18.7778 0H7.22222ZM7.22222 3H18.7778C21.1669 3 23.1111 5.019 23.1111 7.5V19.5C23.1111 21.981 21.1669 24 18.7778 24H7.22222C4.83311 24 2.88889 21.981 2.88889 19.5V7.5C2.88889 5.019 4.83311 3 7.22222 3ZM20.2222 4.5C19.8391 4.5 19.4717 4.65804 19.2008 4.93934C18.93 5.22064 18.7778 5.60218 18.7778 6C18.7778 6.39782 18.93 6.77936 19.2008 7.06066C19.4717 7.34196 19.8391 7.5 20.2222 7.5C20.6053 7.5 20.9727 7.34196 21.2436 7.06066C21.5145 6.77936 21.6667 6.39782 21.6667 6C21.6667 5.60218 21.5145 5.22064 21.2436 4.93934C20.9727 4.65804 20.6053 4.5 20.2222 4.5ZM13 6C9.01767 6 5.77778 9.3645 5.77778 13.5C5.77778 17.6355 9.01767 21 13 21C16.9823 21 20.2222 17.6355 20.2222 13.5C20.2222 9.3645 16.9823 6 13 6ZM13 9C15.3891 9 17.3333 11.019 17.3333 13.5C17.3333 15.981 15.3891 18 13 18C10.6109 18 8.66667 15.981 8.66667 13.5C8.66667 11.019 10.6109 9 13 9Z" fill="#1B1B1B"/>
+            </svg>
+        </a>
+        <a class="social__item" href="#">
+            <svg width="26" height="17" viewbox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.5299 0.00144388C11.1865 -0.0112293 10.1725 0.0521399 9.32339 0.489395C8.97485 0.666831 8.72771 0.894963 8.5376 1.16112C8.43621 1.29419 8.34115 1.4146 8.29679 1.69343C8.27144 1.8265 8.25243 2.0483 8.39185 2.28911C8.53126 2.53625 8.8291 2.70101 9.03189 2.7327C9.18397 2.75171 9.50716 2.88478 9.56419 2.96083C9.69727 3.15094 9.74797 3.29035 9.76698 3.3664C9.78599 3.44244 9.77965 3.39174 9.77965 3.39174V3.46779C9.77965 3.46779 9.83035 4.26625 9.79866 5.09006C9.77965 5.49563 9.74163 5.92021 9.67826 6.20538C9.61489 6.49054 9.45646 6.56025 9.6846 6.42717C9.52617 6.52223 9.5832 6.56025 9.38676 6.45886C9.18397 6.3638 8.658 5.92021 7.96727 4.67816C7.27653 3.42977 6.77591 2.78339 6.66184 2.64398C6.61748 2.51724 6.50976 2.25742 6.14221 1.97225C5.66693 1.60471 5.17898 1.59837 5.17898 1.59837L5.13462 1.59203H1.59224C1.59224 1.59203 1.38945 1.59837 1.15498 1.64907C0.920514 1.69976 0.584651 1.7568 0.267801 2.14969H0.261465C-0.0617237 2.5616 -0.00469059 2.93548 0.0206574 3.16361C0.0523425 3.39808 0.12205 3.58186 0.12205 3.58186L0.134724 3.61988L0.153735 3.6579C0.153735 3.6579 2.85964 9.43091 6.09151 12.948C9.12694 16.2559 12.644 16.1925 12.644 16.1925H14.6401L14.6845 16.1862C14.6845 16.1862 15.3245 16.2179 15.8632 15.6158C16.1357 15.3053 16.199 15.0138 16.2307 14.7984C16.2688 14.5766 16.2688 14.3991 16.2688 14.3991V14.4498C16.2688 14.4498 16.2941 14.0316 16.4082 13.5943C16.4652 13.3789 16.5476 13.1634 16.6236 13.043C16.6616 12.9733 16.6616 12.9923 16.6743 12.9733C16.8137 13.0747 17.0419 13.3092 17.2827 13.607C17.777 14.1963 18.3346 15.0138 19.1141 15.5778C19.6781 15.977 20.2104 16.1545 20.6159 16.2179C20.8884 16.2622 21.0849 16.2559 21.218 16.2432L23.9746 16.1925H23.9999C23.9999 16.1925 24.5702 16.1798 25.1406 15.8186C25.4194 15.6412 25.7426 15.318 25.8503 14.8554C25.9644 14.3928 25.8376 13.8922 25.5715 13.4296C25.6602 13.588 25.5525 13.3789 25.4701 13.2141C25.3877 13.0493 25.261 12.8276 25.0709 12.5487C24.7033 12.0037 24.095 11.237 23.0874 10.2611C22.6121 9.8048 22.3079 9.55132 22.1178 9.37388C22.1748 9.2915 22.1812 9.28516 22.3966 9.03168C22.7388 8.63245 23.2395 8.04311 23.8732 7.16227C24.6336 6.09765 25.1849 5.22948 25.5398 4.50706C25.8947 3.79098 26.1798 3.1953 25.863 2.4602C25.6919 2.06097 25.3877 1.90889 25.1659 1.81383C24.9378 1.71877 24.735 1.68075 24.5449 1.64907C24.171 1.59203 23.8415 1.59203 23.8415 1.59203L20.6286 1.61738C20.5336 1.59837 20.166 1.52866 19.6907 1.83284C19.2218 2.12434 19.1141 2.43486 19.0887 2.52991C19.0127 2.63764 18.4804 3.39174 17.7389 4.70984C16.9912 6.04062 16.4842 6.40182 16.4208 6.43351C16.4018 6.4145 16.4398 6.42084 16.3511 6.37014C16.3131 6.33845 16.2751 6.31311 16.2434 5.97091C16.2181 5.62871 16.2497 5.09006 16.2497 4.45636C16.2497 3.0939 16.3701 2.38416 16.3004 1.7061C16.2688 1.3639 16.1293 0.94566 15.8252 0.666831C15.521 0.394339 15.1915 0.292947 14.8493 0.204228C14.3106 0.0711514 13.5819 0.0141187 12.5299 0.00144388ZM12.5172 1.62372C13.4995 1.63639 14.1902 1.71244 14.4437 1.77581C14.6592 1.83284 14.6908 1.85819 14.6845 1.84551C14.6845 1.85819 14.6845 1.85185 14.6845 1.87086C14.7098 2.14335 14.6275 3.01786 14.6275 4.45636C14.6275 5.02036 14.5831 5.56534 14.6275 6.11032C14.6718 6.6553 14.8683 7.32069 15.4449 7.71359H15.4513C15.3816 7.66923 16.18 8.2649 16.9405 7.99241C17.7009 7.71359 18.3029 7.01651 19.1584 5.50197C19.9062 4.15852 20.4575 3.40442 20.4575 3.40442L20.5082 3.32838L20.5462 3.25233C20.5462 3.25233 20.5336 3.24599 20.5462 3.23966L23.8415 3.21431C23.8415 3.21431 24.0696 3.21431 24.2914 3.25233C24.2977 3.25233 24.3041 3.25233 24.3104 3.25233C24.2787 3.265 24.3041 3.34738 24.0823 3.79731C23.7971 4.37398 23.2838 5.19779 22.5551 6.21805C21.953 7.0482 21.5031 7.58685 21.1673 7.97974C20.8314 8.3663 20.5779 8.55007 20.4132 9.05703C20.3308 9.30418 20.3498 9.67172 20.4702 9.91887C20.5843 10.1597 20.7237 10.2927 20.8631 10.4258C21.1419 10.692 21.4714 10.9518 21.953 11.4271C22.8973 12.3396 23.4296 13.0113 23.7274 13.4549C23.8795 13.683 23.9682 13.8415 24.0252 13.9555C24.0823 14.0696 24.0443 14.0252 24.171 14.2407C24.2787 14.4372 24.2597 14.4625 24.2597 14.4498C24.152 14.5132 23.8795 14.5702 23.8732 14.5702L21.1166 14.6209L21.0405 14.6399C21.0405 14.6399 21.0469 14.6463 20.8758 14.6209C20.6983 14.5892 20.4195 14.5132 20.0646 14.2597C19.6274 13.9492 19.076 13.2268 18.5311 12.5677C18.2649 12.2445 17.9924 11.9277 17.6502 11.6742C17.308 11.4207 16.7694 11.1863 16.2181 11.37C15.7428 11.5221 15.4323 11.8707 15.2358 12.1939C15.0394 12.5234 14.9253 12.8656 14.8366 13.1761C14.6718 13.8035 14.6465 14.3674 14.6465 14.3674V14.4181C14.6465 14.4181 14.6465 14.4562 14.6338 14.5132C14.6021 14.5259 14.5578 14.5576 14.5324 14.5702H12.5933C12.5933 14.5702 9.91273 14.7096 7.28287 11.858C4.46924 8.78454 1.96612 3.64522 1.757 3.21431H5.02056C5.05224 3.22698 5.16631 3.27134 5.15364 3.265C5.07759 3.20164 5.19166 3.34105 5.19166 3.34105L5.24235 3.46145L5.33107 3.56284C5.33107 3.56284 5.83169 4.1712 6.54778 5.46395C7.31456 6.85175 7.96093 7.57417 8.68335 7.92271C9.40577 8.27124 10.1662 8.0241 10.4894 7.84033C11.0914 7.49179 11.1611 7.00384 11.2625 6.55391C11.3639 6.10399 11.3956 5.62237 11.4146 5.15343C11.4526 4.25358 11.4019 3.4868 11.4019 3.42977C11.3956 3.41076 11.3956 3.18896 11.3322 2.94815C11.2625 2.70101 11.1358 2.37782 10.895 2.03563C10.7936 1.89621 10.6985 1.96592 10.5908 1.86453C11.0407 1.73779 11.5223 1.61104 12.5172 1.62372Z" fill="black"/>
+            </svg>
+        </a>
+    </div>
+    <!-- <div class="choice-theme">
+        <p class="choice-theme__title">
+            Выберите тему
+        </p>
+        <div class="choice-theme__container">
+            <div class="choice-theme__item">
+                <input type="radio" id="blue" name="choice-theme" class="choice-theme__radio visually-hidden" checked>
+                <label for="blue" class="choice-theme__label choice-theme__label--blue"></label>
+            </div>
+            <div class="choice-theme__item">
+                <input type="radio" id="red" name="choice-theme" class="choice-theme__radio visually-hidden">
+                <label for="red" class="choice-theme__label choice-theme__label--red"></label>
+            </div>
+            <div class="choice-theme__item">
+                <input type="radio" id="green" name="choice-theme" class="choice-theme__radio visually-hidden">
+                <label for="green" class="choice-theme__label choice-theme__label--green"></label>
+            </div>
+            <div class="choice-theme__item">
+                <input type="radio" id="yellow" name="choice-theme" class="choice-theme__radio visually-hidden">
+                <label for="yellow" class="choice-theme__label choice-theme__label--yellow"></label>
+            </div>
+        </div>
+    </div> -->
+</section>
+
+      <div class="tabs">
+    <ul class="tabs__list">
+        <li class="tabs__item">
+            <button class="tabs__btn tabs__btn--active" data-path-tabs="main">Главная</button>
+        </li>
+        <li class="tabs__item">
+            <button class="tabs__btn" data-path-tabs="about">О себе</button>
+        </li>
+        <li class="tabs__item">
+            <button class="tabs__btn" data-path-tabs="contacts">Контакты</button>
+        </li>
+    </ul>
+    <div class="tabs__content tabs__content--active" data-tabs-target="main">
+        <div class="content">
+            <h2 class="content__title">Главная</h2>
+            <p class="content__description">Lorem <a href="#" class="link">ipsum</a> dolor sit amet consectetur adipisicing elit. Minus reprehenderit, consectetur quisquam vitae enim doloribus est, ipsum necessitatibus ducimus autem consequatur natus? Animi nostrum assumenda aliquid repellendus laudantium atque alias, excepturi suscipit labore ipsam consectetur a eos pariatur totam voluptate facilis eveniet magnam blanditiis. Aliquam, soluta. Expedita exercitationem veniam iusto similique eveniet ut soluta possimus inventore? Ea pariatur possimus recusandae culpa quasi, quidem ratione voluptatum tempore iste eaque blanditiis quo facere sapiente reiciendis perferendis! Eius quam eligendi nobis, sint dolorum temporibus nulla quisquam saepe culpa doloribus sapiente, corporis, et ipsam impedit libero nemo est ipsa non nostrum. Cum, libero beatae.</p>
+            <button class="content__btn">Ссылка</button>
+        </div>
+    </div>
+    <div class="tabs__content" data-tabs-target="about">
+        <div class="content">
+            <h2 class="content__title">О себе</h2>
+            <p class="content__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reprehenderit, consectetur quisquam vitae enim doloribus est, ipsum necessitatibus ducimus autem consequatur natus? Animi nostrum assumenda aliquid repellendus laudantium atque alias, excepturi suscipit labore ipsam consectetur a eos pariatur totam voluptate facilis eveniet magnam blanditiis. Aliquam, soluta. Expedita exercitationem veniam iusto similique eveniet ut soluta possimus inventore? Ea pariatur possimus recusandae culpa quasi, quidem ratione voluptatum tempore iste eaque blanditiis quo facere sapiente reiciendis perferendis! Eius quam eligendi nobis, sint dolorum temporibus nulla quisquam saepe culpa doloribus sapiente, corporis, et ipsam impedit libero nemo est ipsa non nostrum. Cum, libero beatae.</p>
+            <button class="content__btn">Ссылка</button>
+        </div>
+    </div>
+    <div class="tabs__content" data-tabs-target="contacts">
+        <div class="content">
+            <h2 class="content__title">Контакты</h2>
+            <p class="content__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reprehenderit, consectetur quisquam vitae enim doloribus est, ipsum necessitatibus ducimus autem consequatur natus? Animi nostrum assumenda aliquid repellendus laudantium atque alias, excepturi suscipit labore ipsam consectetur a eos pariatur totam voluptate facilis eveniet magnam blanditiis. Aliquam, soluta. Expedita exercitationem veniam iusto similique eveniet ut soluta possimus inventore? Ea pariatur possimus recusandae culpa quasi, quidem ratione voluptatum tempore iste eaque blanditiis quo facere sapiente reiciendis perferendis! Eius quam eligendi nobis, sint dolorum temporibus nulla quisquam saepe culpa doloribus sapiente, corporis, et ipsam impedit libero nemo est ipsa non nostrum. Cum, libero beatae.</p>
+            <button class="content__btn">Ссылка</button>
+        </div>
+    </div>
+</div>
+
+<div class="slider-container">
+    <!-- Slider main container -->
+  <div class="slider portfolio-slider">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper portfolio-slider__wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide portfolio-slider__slide" >
+              <div class="portfolio-slider__left-side">
+                <span class="portfolio-slider__category" >HTML, JS, CSS</span>
+                <h2 class="portfolio-slider__title" data-swiper-parallax="-100">Hello, world</h2>
+                <p class="portfolio-slider__description"  data-swiper-parallax="-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a class="portfolio-slider__btn"  >Посмотреть</a>
+              </div>
+              <div class="portfolio-slider__image-container" data-swiper-parallax="20%">
+                <img src="../img/portfolio-image.jpg" alt="Изображение работы" class="portfolio-slider__image" >
+            </div>
+        </div>
+
+        <div class="swiper-slide portfolio-slider__slide">
+          <div class="portfolio-slider__left-side">
+            <span class="portfolio-slider__category">HTML, JS, CSS</span>
+            <h2 class="portfolio-slider__title"  data-swiper-parallax="-100">Hello, world</h2>
+            <p class="portfolio-slider__description"  data-swiper-parallax="-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a class="portfolio-slider__btn">Посмотреть</a>
+          </div>
+          <div class="portfolio-slider__image-container" data-swiper-parallax="20%">
+            <img src="../img/portfolio-image.jpg" alt="Изображение работы" class="portfolio-slider__image">
+          </div>
+        </div>
+
+        <div class="swiper-slide portfolio-slider__slide">
+          <div class="portfolio-slider__left-side">
+            <span class="portfolio-slider__category" >HTML, JS, CSS</span>
+            <h2 class="portfolio-slider__title"  data-swiper-parallax="-100">Hello, world</h2>
+            <p class="portfolio-slider__description"   data-swiper-parallax="-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a class="portfolio-slider__btn"  >Посмотреть</a>
+          </div>
+          <div class="portfolio-slider__image-container"  data-swiper-parallax="20%">
+            <img src="../img/portfolio-image.jpg" alt="Изображение работы" class="portfolio-slider__image">
+          </div>
+        </div>
+    </div>
+
+  </div>
+
+  <div class="portfolio-slider__sidebar">
+    <p class="portfolio-slider__numbers">
+        <span class="portfolio-slider__current">1</span>/ <span class="portfolio-slider__count">24</span>
+    </p>
+    <a href="#" class="portfolio-slider__link link">Страница с работами</a>
+    <div class="portfolio-slider__buttons swiper-navigation">
+        <button class="portfolio-slider__button portfolio-slider__button--left"  id="swiperPrev"></button>
+        <button class="portfolio-slider__button portfolio-slider__button--right" id="swiperNext"></button>
+    </div>
+  </div>
+
+    <div class="social social--portfolio-slider">
+      <a class="social__item" href="#">
+          <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0V16.0424H7.75019C8.4683 16.0424 13.4138 15.8967 13.4138 11.3814C13.4138 8.55976 11.4729 7.60115 10.4871 7.31661C11.212 6.97449 12.655 6.16154 12.655 3.98349C12.655 2.77083 12.4823 0 7.5334 0H0ZM17.6683 1.49042V2.95374H23.657V1.49042H17.6683ZM3.52281 2.73696H6.82884C7.14047 2.73696 9.24061 2.57098 9.24061 4.57966C9.24061 6.29703 7.72309 6.47656 7.09982 6.47656H3.52281V2.73696ZM20.8117 4.28157C16.2829 4.28157 15.3378 8.21425 15.3378 9.91808C15.3378 14.9753 19.4839 15.5546 20.8117 15.5546C24.3921 15.5546 25.4083 13.2377 25.8249 11.9505H23.2235C23.1219 12.2824 22.3631 13.3596 20.9201 13.3596C18.5015 13.3596 18.2915 11.4695 18.2915 10.6226H25.9875C26.1433 7.69599 24.8629 4.28157 20.8117 4.28157ZM20.7304 6.47656C21.4519 6.47656 22.0345 6.68657 22.3834 7.07273C22.7323 7.46227 22.9897 8.03134 23.0609 8.77994H18.2915C18.3051 8.57331 18.3525 8.3362 18.427 8.07537C18.5015 7.80777 18.6167 7.55373 18.8064 7.31661C18.9961 7.08289 19.2603 6.87965 19.5652 6.72044C19.8768 6.55785 20.263 6.47656 20.7304 6.47656ZM3.52281 8.88833H7.34371C8.10247 8.88833 9.89098 9.00689 9.89098 11.1917C9.89098 13.3088 7.63841 13.3054 7.28952 13.3054H3.52281V8.88833Z" fill="#010101"/>
+          </svg>
+      </a>
+      <a class="social__item" href="#">
+          <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.22222 0C3.23989 0 0 3.3645 0 7.5V19.5C0 23.6355 3.23989 27 7.22222 27H18.7778C22.7601 27 26 23.6355 26 19.5V7.5C26 3.3645 22.7601 0 18.7778 0H7.22222ZM7.22222 3H18.7778C21.1669 3 23.1111 5.019 23.1111 7.5V19.5C23.1111 21.981 21.1669 24 18.7778 24H7.22222C4.83311 24 2.88889 21.981 2.88889 19.5V7.5C2.88889 5.019 4.83311 3 7.22222 3ZM20.2222 4.5C19.8391 4.5 19.4717 4.65804 19.2008 4.93934C18.93 5.22064 18.7778 5.60218 18.7778 6C18.7778 6.39782 18.93 6.77936 19.2008 7.06066C19.4717 7.34196 19.8391 7.5 20.2222 7.5C20.6053 7.5 20.9727 7.34196 21.2436 7.06066C21.5145 6.77936 21.6667 6.39782 21.6667 6C21.6667 5.60218 21.5145 5.22064 21.2436 4.93934C20.9727 4.65804 20.6053 4.5 20.2222 4.5ZM13 6C9.01767 6 5.77778 9.3645 5.77778 13.5C5.77778 17.6355 9.01767 21 13 21C16.9823 21 20.2222 17.6355 20.2222 13.5C20.2222 9.3645 16.9823 6 13 6ZM13 9C15.3891 9 17.3333 11.019 17.3333 13.5C17.3333 15.981 15.3891 18 13 18C10.6109 18 8.66667 15.981 8.66667 13.5C8.66667 11.019 10.6109 9 13 9Z" fill="#1B1B1B"/>
+          </svg>
+      </a>
+      <a class="social__item" href="#">
+          <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.5299 0.00144388C11.1865 -0.0112293 10.1725 0.0521399 9.32339 0.489395C8.97485 0.666831 8.72771 0.894963 8.5376 1.16112C8.43621 1.29419 8.34115 1.4146 8.29679 1.69343C8.27144 1.8265 8.25243 2.0483 8.39185 2.28911C8.53126 2.53625 8.8291 2.70101 9.03189 2.7327C9.18397 2.75171 9.50716 2.88478 9.56419 2.96083C9.69727 3.15094 9.74797 3.29035 9.76698 3.3664C9.78599 3.44244 9.77965 3.39174 9.77965 3.39174V3.46779C9.77965 3.46779 9.83035 4.26625 9.79866 5.09006C9.77965 5.49563 9.74163 5.92021 9.67826 6.20538C9.61489 6.49054 9.45646 6.56025 9.6846 6.42717C9.52617 6.52223 9.5832 6.56025 9.38676 6.45886C9.18397 6.3638 8.658 5.92021 7.96727 4.67816C7.27653 3.42977 6.77591 2.78339 6.66184 2.64398C6.61748 2.51724 6.50976 2.25742 6.14221 1.97225C5.66693 1.60471 5.17898 1.59837 5.17898 1.59837L5.13462 1.59203H1.59224C1.59224 1.59203 1.38945 1.59837 1.15498 1.64907C0.920514 1.69976 0.584651 1.7568 0.267801 2.14969H0.261465C-0.0617237 2.5616 -0.00469059 2.93548 0.0206574 3.16361C0.0523425 3.39808 0.12205 3.58186 0.12205 3.58186L0.134724 3.61988L0.153735 3.6579C0.153735 3.6579 2.85964 9.43091 6.09151 12.948C9.12694 16.2559 12.644 16.1925 12.644 16.1925H14.6401L14.6845 16.1862C14.6845 16.1862 15.3245 16.2179 15.8632 15.6158C16.1357 15.3053 16.199 15.0138 16.2307 14.7984C16.2688 14.5766 16.2688 14.3991 16.2688 14.3991V14.4498C16.2688 14.4498 16.2941 14.0316 16.4082 13.5943C16.4652 13.3789 16.5476 13.1634 16.6236 13.043C16.6616 12.9733 16.6616 12.9923 16.6743 12.9733C16.8137 13.0747 17.0419 13.3092 17.2827 13.607C17.777 14.1963 18.3346 15.0138 19.1141 15.5778C19.6781 15.977 20.2104 16.1545 20.6159 16.2179C20.8884 16.2622 21.0849 16.2559 21.218 16.2432L23.9746 16.1925H23.9999C23.9999 16.1925 24.5702 16.1798 25.1406 15.8186C25.4194 15.6412 25.7426 15.318 25.8503 14.8554C25.9644 14.3928 25.8376 13.8922 25.5715 13.4296C25.6602 13.588 25.5525 13.3789 25.4701 13.2141C25.3877 13.0493 25.261 12.8276 25.0709 12.5487C24.7033 12.0037 24.095 11.237 23.0874 10.2611C22.6121 9.8048 22.3079 9.55132 22.1178 9.37388C22.1748 9.2915 22.1812 9.28516 22.3966 9.03168C22.7388 8.63245 23.2395 8.04311 23.8732 7.16227C24.6336 6.09765 25.1849 5.22948 25.5398 4.50706C25.8947 3.79098 26.1798 3.1953 25.863 2.4602C25.6919 2.06097 25.3877 1.90889 25.1659 1.81383C24.9378 1.71877 24.735 1.68075 24.5449 1.64907C24.171 1.59203 23.8415 1.59203 23.8415 1.59203L20.6286 1.61738C20.5336 1.59837 20.166 1.52866 19.6907 1.83284C19.2218 2.12434 19.1141 2.43486 19.0887 2.52991C19.0127 2.63764 18.4804 3.39174 17.7389 4.70984C16.9912 6.04062 16.4842 6.40182 16.4208 6.43351C16.4018 6.4145 16.4398 6.42084 16.3511 6.37014C16.3131 6.33845 16.2751 6.31311 16.2434 5.97091C16.2181 5.62871 16.2497 5.09006 16.2497 4.45636C16.2497 3.0939 16.3701 2.38416 16.3004 1.7061C16.2688 1.3639 16.1293 0.94566 15.8252 0.666831C15.521 0.394339 15.1915 0.292947 14.8493 0.204228C14.3106 0.0711514 13.5819 0.0141187 12.5299 0.00144388ZM12.5172 1.62372C13.4995 1.63639 14.1902 1.71244 14.4437 1.77581C14.6592 1.83284 14.6908 1.85819 14.6845 1.84551C14.6845 1.85819 14.6845 1.85185 14.6845 1.87086C14.7098 2.14335 14.6275 3.01786 14.6275 4.45636C14.6275 5.02036 14.5831 5.56534 14.6275 6.11032C14.6718 6.6553 14.8683 7.32069 15.4449 7.71359H15.4513C15.3816 7.66923 16.18 8.2649 16.9405 7.99241C17.7009 7.71359 18.3029 7.01651 19.1584 5.50197C19.9062 4.15852 20.4575 3.40442 20.4575 3.40442L20.5082 3.32838L20.5462 3.25233C20.5462 3.25233 20.5336 3.24599 20.5462 3.23966L23.8415 3.21431C23.8415 3.21431 24.0696 3.21431 24.2914 3.25233C24.2977 3.25233 24.3041 3.25233 24.3104 3.25233C24.2787 3.265 24.3041 3.34738 24.0823 3.79731C23.7971 4.37398 23.2838 5.19779 22.5551 6.21805C21.953 7.0482 21.5031 7.58685 21.1673 7.97974C20.8314 8.3663 20.5779 8.55007 20.4132 9.05703C20.3308 9.30418 20.3498 9.67172 20.4702 9.91887C20.5843 10.1597 20.7237 10.2927 20.8631 10.4258C21.1419 10.692 21.4714 10.9518 21.953 11.4271C22.8973 12.3396 23.4296 13.0113 23.7274 13.4549C23.8795 13.683 23.9682 13.8415 24.0252 13.9555C24.0823 14.0696 24.0443 14.0252 24.171 14.2407C24.2787 14.4372 24.2597 14.4625 24.2597 14.4498C24.152 14.5132 23.8795 14.5702 23.8732 14.5702L21.1166 14.6209L21.0405 14.6399C21.0405 14.6399 21.0469 14.6463 20.8758 14.6209C20.6983 14.5892 20.4195 14.5132 20.0646 14.2597C19.6274 13.9492 19.076 13.2268 18.5311 12.5677C18.2649 12.2445 17.9924 11.9277 17.6502 11.6742C17.308 11.4207 16.7694 11.1863 16.2181 11.37C15.7428 11.5221 15.4323 11.8707 15.2358 12.1939C15.0394 12.5234 14.9253 12.8656 14.8366 13.1761C14.6718 13.8035 14.6465 14.3674 14.6465 14.3674V14.4181C14.6465 14.4181 14.6465 14.4562 14.6338 14.5132C14.6021 14.5259 14.5578 14.5576 14.5324 14.5702H12.5933C12.5933 14.5702 9.91273 14.7096 7.28287 11.858C4.46924 8.78454 1.96612 3.64522 1.757 3.21431H5.02056C5.05224 3.22698 5.16631 3.27134 5.15364 3.265C5.07759 3.20164 5.19166 3.34105 5.19166 3.34105L5.24235 3.46145L5.33107 3.56284C5.33107 3.56284 5.83169 4.1712 6.54778 5.46395C7.31456 6.85175 7.96093 7.57417 8.68335 7.92271C9.40577 8.27124 10.1662 8.0241 10.4894 7.84033C11.0914 7.49179 11.1611 7.00384 11.2625 6.55391C11.3639 6.10399 11.3956 5.62237 11.4146 5.15343C11.4526 4.25358 11.4019 3.4868 11.4019 3.42977C11.3956 3.41076 11.3956 3.18896 11.3322 2.94815C11.2625 2.70101 11.1358 2.37782 10.895 2.03563C10.7936 1.89621 10.6985 1.96592 10.5908 1.86453C11.0407 1.73779 11.5223 1.61104 12.5172 1.62372Z" fill="black"/>
+          </svg>
+      </a>
+  </div>
+</div>
+
+      <div class="blog">
+    <h2 class="blog__title-section">Блог</h2>
+    <div class="blog__cards">
+        <div class="blog__card">
+            <div class="blog__content">
+                <div class="blog__info">
+                    <ul class="blog__categories">
+                        <li class="blog__category">
+                            <a href="#" class="blog__category-link">Категория 1</a>
+                        </li>
+                    </ul>
+                    <div class="blog__date">
+                        12 дек 2021
+                    </div>
+                </div>
+                <h2 class="blog__title">My first site on wordpress</h2>
+                <p class="blog__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <a href="#" class="blog__link link">Read more</a>
+            </div>
+            <div class="blog__image-container"><img src="../img/blog-image.jpg" alt="Изображение карточки" class="blog__image"></div>
+        </div>
+        <div class="blog__card">
+            <div class="blog__content">
+                <div class="blog__info">
+                    <ul class="blog__categories">
+                        <li class="blog__category">
+                            <a href="#" class="blog__category-link">Категория 1</a>
+                        </li>
+                    </ul>
+                    <div class="blog__date">
+                        12 дек 2021
+                    </div>
+                </div>
+                <h2 class="blog__title">My first site on wordpress</h2>
+                <p class="blog__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <a href="#" class="blog__link link">Read more</a>
+            </div>
+            <div class="blog__image-container"><img src="../img/portfolio-image.jpg" alt="Изображение карточки" class="blog__image"></div>
+        </div>
+        <div class="blog__card">
+            <div class="blog__content">
+                <div class="blog__info">
+                    <ul class="blog__categories">
+                        <li class="blog__category">
+                            <a href="#" class="blog__category-link">Категория 1</a>
+                        </li>
+                    </ul>
+                    <div class="blog__date">
+                        12 дек 2021
+                    </div>
+                </div>
+                <h2 class="blog__title">My first site on wordpress</h2>
+                <p class="blog__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <a href="#" class="blog__link link">Read more</a>
+            </div>
+            <div class="blog__image-container"><img src="../img/portfolio-image.jpg" alt="Изображение карточки" class="blog__image"></div>
+        </div>
+        <div class="blog__card">
+            <div class="blog__content">
+                <div class="blog__info">
+                    <ul class="blog__categories">
+                        <li class="blog__category">
+                            <a href="#" class="blog__category-link">Категория 1</a>
+                        </li>
+                    </ul>
+                    <div class="blog__date">
+                        12 дек 2021
+                    </div>
+                </div>
+                <h2 class="blog__title">My first site on wordpress</h2>
+                <p class="blog__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <a href="#" class="blog__link link">Read more</a>
+            </div>
+            <div class="blog__image-container"><img src="../img/portfolio-image.jpg" alt="Изображение карточки" class="blog__image"></div>
+        </div>
+        <div class="blog__card">
+            <div class="blog__content">
+                <div class="blog__info">
+                    <ul class="blog__categories">
+                        <li class="blog__category">
+                            <a href="#" class="blog__category-link">Категория 1</a>
+                        </li>
+                    </ul>
+                    <div class="blog__date">
+                        12 дек 2021
+                    </div>
+                </div>
+                <h2 class="blog__title">My first site on wordpress</h2>
+                <p class="blog__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <a href="#" class="blog__link link">Read more</a>
+            </div>
+            <div class="blog__image-container"><img src="../img/portfolio-image.jpg" alt="Изображение карточки" class="blog__image"></div>
+        </div>
+        <div class="blog__card">
+            <div class="blog__content">
+                <div class="blog__info">
+                    <ul class="blog__categories">
+                        <li class="blog__category">
+                            <a href="#" class="blog__category-link">Категория 1</a>
+                        </li>
+                    </ul>
+                    <div class="blog__date">
+                        12 дек 2021
+                    </div>
+                </div>
+                <h2 class="blog__title">My first site on wordpress</h2>
+                <p class="blog__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <a href="#" class="blog__link link">Read more</a>
+            </div>
+            <div class="blog__image-container"><img src="../img/portfolio-image.jpg" alt="Изображение карточки" class="blog__image"></div>
+        </div>
+        <div class="blog__card">
+            <div class="blog__content">
+                <div class="blog__info">
+                    <ul class="blog__categories">
+                        <li class="blog__category">
+                            <a href="#" class="blog__category-link">Категория 1</a>
+                        </li>
+                    </ul>
+                    <div class="blog__date">
+                        12 дек 2021
+                    </div>
+                </div>
+                <h2 class="blog__title">My first site on wordpress</h2>
+                <p class="blog__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <a href="#" class="blog__link link">Read more</a>
+            </div>
+            <div class="blog__image-container"><img src="../img/portfolio-image.jpg" alt="Изображение карточки" class="blog__image"></div>
+        </div>
+    </div>
+   <div class="blog__link-container">
+        <a href="#" class="blog__link-section link">Перейти к блогу</a>
+   </div>
+</div>
+
+      <div class="faq">
+    <h2 class="faq__title-section">Часто задаваемые вопросы</h2>
+    <ul class="accordion__list">
+        <li class="accordion">
+            <button class="accordion__control">
+                <span class="accordion__title">Вопрос номер 1</span>
+            </button>
+            <div class="accordion__content">
+              quidem quos eos facere eveniet quibusdam ut sint minus esse, numquam atque vero inventore alias nobis! Asperiores magni beatae magnam consequatur, consectetur ex cum, rem aliquid quisquam ducimus quibusdam odit sunt sint iure debitis quos esse. Voluptatum autem debitis culpa velit cumque nam, labore quisquam saepe, consectetur, ullam provident blanditiis quos ducimus. Perspiciatis adipisci tempore eius.
+            </div>
+        </li>
+        <li class="accordion">
+            <button class="accordion__control">
+                <span class="accordion__title">Вопрос номер 2</span>
+            </button>
+            <div class="accordion__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere corporis ea obcaecati repellendus debitis ipsum. Distinctio ipsa fuga rem maxime nihil in sapiente, blanditiis saepe laboriosam aspernatur recusandae, delectus, unde consequuntur. Quibusdam, enim. Voluptatum temporibus blanditiis eius qui aut earum praesentium mollitia obcaecati suscipit, quidem quos eos facere eveniet quibusdam ut sint minus esse, numquam atque vero inventore alias nobis! Asperiores magni beatae magnam consequatur, consectetur ex cum, rem aliquid quisquam ducimus quibusdam odit sunt sint iure debitis quos esse. Voluptatum autem debitis culpa velit cumque nam, labore quisquam saepe, consectetur, ullam provident blanditiis quos ducimus. Perspiciatis adipisci tempore eius.
+            </div>
+        </li>
+        <li class="accordion">
+            <button class="accordion__control">
+                <span class="accordion__title">Вопрос номер 3</span>
+            </button>
+            <div class="accordion__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere corporis ea obcaecati repellendus debitis ipsum. Distinctio ipsa fuga rem maxime nihil in sapiente, blanditiis saepe laboriosam aspernatur recusandae, delectus, unde consequuntur. Quibusdam, enim. Voluptatum temporibus blanditiis eius qui aut earum praesentium mollitia obcaecati suscipit, quidem quos eos facere eveniet quibusdam ut sint minus esse, numquam atque vero inventore alias nobis! Asperiores magni beatae magnam consequatur, consectetur ex cum, rem aliquid quisquam ducimus quibusdam odit sunt sint iure debitis quos esse. Voluptatum autem debitis culpa velit cumque nam, labore quisquam saepe, consectetur, ullam provident blanditiis quos ducimus. Perspiciatis adipisci tempore eius.
+            </div>
+        </li>
+        <li class="accordion">
+            <button class="accordion__control">
+                <span class="accordion__title">Вопрос номер 4</span>
+            </button>
+            <div class="accordion__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere corporis ea obcaecati repellendus debitis ipsum. Distinctio ipsa fuga rem maxime nihil in sapiente, blanditiis saepe laboriosam aspernatur recusandae, delectus, unde consequuntur. Quibusdam, enim. Voluptatum temporibus blanditiis eius qui aut earum praesentium mollitia obcaecati suscipit, quidem quos eos facere eveniet quibusdam ut sint minus esse, numquam atque vero inventore alias nobis! Asperiores magni beatae magnam consequatur, consectetur ex cum, rem aliquid quisquam ducimus quibusdam odit sunt sint iure debitis quos esse. Voluptatum autem debitis culpa velit cumque nam, labore quisquam saepe, consectetur, ullam provident blanditiis quos ducimus. Perspiciatis adipisci tempore eius.
+            </div>
+        </li>
+    </ul>
+</div>
+    </div>
+    <footer class="footer">
+  <div class="container"></div>
+</footer>
+
+  </div>
+</body>
+
+</html>
